@@ -1,0 +1,609 @@
+{
+  "roadmap": {
+    "years": [
+      {
+        "year_num": 1,
+        "name": "Year 1: AI/ML Foundations",
+        "description": "Master fundamentals: Python, Math, Classical ML, Basic Deep Learning",
+        "focus_areas": [
+          "Python Programming",
+          "Mathematics for ML",
+          "Classical ML",
+          "Deep Learning Basics",
+          "Portfolio Start"
+        ],
+        "status": "not_started",
+        "quarters": [
+          {
+            "quarter_num": 1,
+            "name": "Q1: Python & Math Foundations",
+            "description": "Build solid programming and mathematical foundation",
+            "focus_areas": [
+              "Python",
+              "Linear Algebra",
+              "Calculus",
+              "Probability & Statistics"
+            ],
+            "status": "not_started",
+            "months": [
+              {
+                "month_num": 1,
+                "name": "Python Essentials",
+                "description": "Master Python for ML",
+                "status": "not_started",
+                "weeks": [
+                  {
+                    "week_num": 1,
+                    "name": "Setup & Basics",
+                    "description": "Environment setup, syntax, OOP concepts",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "w1_t1",
+                        "name": "Install Python & tools",
+                        "description": "Set up environment, Jupyter, git",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w1_t2",
+                        "name": "Python basics",
+                        "description": "Variables, control flow, functions",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w1_t3",
+                        "name": "OOP fundamentals",
+                        "description": "Classes, inheritance, polymorphism",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 2,
+                    "name": "Libraries & Data",
+                    "description": "NumPy, Pandas fundamentals",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "w2_t1",
+                        "name": "NumPy fundamentals",
+                        "description": "Arrays, operations, broadcasting",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w2_t2",
+                        "name": "Pandas basics",
+                        "description": "DataFrames, indexing, groupby",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w2_t3",
+                        "name": "Data visualization",
+                        "description": "Matplotlib, Seaborn basics",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 3,
+                    "name": "Advanced Python",
+                    "description": "Functional programming, testing",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "w3_t1",
+                        "name": "Functional programming",
+                        "description": "Lambda, map, filter, comprehensions",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w3_t2",
+                        "name": "Testing & debugging",
+                        "description": "Unit tests with pytest",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w3_t3",
+                        "name": "Code quality",
+                        "description": "Linting, formatting, documentation",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 4,
+                    "name": "Python Project",
+                    "description": "Small project exercise",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "w4_t1",
+                        "name": "Project planning",
+                        "description": "Design simple data tool",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w4_t2",
+                        "name": "Implementation",
+                        "description": "Build & test",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "w4_t3",
+                        "name": "Documentation",
+                        "description": "README, comments, examples",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "month_num": 2,
+                "name": "Linear Algebra",
+                "description": "Mathematical foundation for ML",
+                "status": "not_started",
+                "weeks": [
+                  {
+                    "week_num": 1,
+                    "name": "Vectors & Matrices",
+                    "description": "Core concepts",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "v1_t1",
+                        "name": "Vector operations",
+                        "description": "Dot product, norms, angles",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "v1_t2",
+                        "name": "Matrix operations",
+                        "description": "Multiplication, transpose, rank",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 2,
+                    "name": "Decompositions",
+                    "description": "Eigenvalues, SVD",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "v2_t1",
+                        "name": "Eigenvalues/eigenvectors",
+                        "description": "Understanding spectral decomposition",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "v2_t2",
+                        "name": "SVD & applications",
+                        "description": "Dimensionality reduction",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 3,
+                    "name": "Advanced Topics",
+                    "description": "Norms, distances, projections",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "v3_t1",
+                        "name": "Norms & distances",
+                        "description": "L1, L2, Euclidean",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "v3_t2",
+                        "name": "Linear transformations",
+                        "description": "Projections and rotations",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 4,
+                    "name": "LA for ML",
+                    "description": "Practical applications",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "v4_t1",
+                        "name": "LA in ML",
+                        "description": "Covariance, PCA concepts",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "month_num": 3,
+                "name": "Calculus & Probability",
+                "description": "Optimization and uncertainty",
+                "status": "not_started",
+                "weeks": [
+                  {
+                    "week_num": 1,
+                    "name": "Single Variable Calculus",
+                    "description": "Derivatives, optimization",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "c1_t1",
+                        "name": "Derivatives",
+                        "description": "Limits, definition, rules",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "c1_t2",
+                        "name": "Optimization",
+                        "description": "Critical points, gradients",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 2,
+                    "name": "Multivariable Calculus",
+                    "description": "Gradients, Hessians",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "c2_t1",
+                        "name": "Partial derivatives",
+                        "description": "Multivariable chain rule",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "c2_t2",
+                        "name": "Optimization",
+                        "description": "Gradient descent intuition",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 3,
+                    "name": "Probability Fundamentals",
+                    "description": "Distributions, independence",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "c3_t1",
+                        "name": "Basic probability",
+                        "description": "Rules, conditional probability",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "c3_t2",
+                        "name": "Distributions",
+                        "description": "Normal, exponential, Poisson",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 4,
+                    "name": "Statistics Essentials",
+                    "description": "Hypothesis testing, estimation",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "c4_t1",
+                        "name": "Descriptive statistics",
+                        "description": "Mean, variance, correlation",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "c4_t2",
+                        "name": "Inference basics",
+                        "description": "Hypothesis testing concepts",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "quarter_num": 2,
+            "name": "Q2: Classical ML Fundamentals",
+            "description": "Regression, classification, and evaluation",
+            "focus_areas": [
+              "Regression",
+              "Classification",
+              "Evaluation Metrics",
+              "Feature Engineering"
+            ],
+            "status": "not_started",
+            "months": [
+              {
+                "month_num": 1,
+                "name": "Regression & Linear Models",
+                "description": "Linear & logistic regression",
+                "status": "not_started",
+                "weeks": [
+                  {
+                    "week_num": 1,
+                    "name": "Linear Regression",
+                    "description": "Theory and practice",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "lr1",
+                        "name": "Linear regression theory",
+                        "description": "OLS, assumptions, diagnostics",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "lr2",
+                        "name": "Scikit-learn usage",
+                        "description": "Fit, predict, evaluate",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "lr3",
+                        "name": "Regularization",
+                        "description": "Ridge, Lasso, ElasticNet",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 2,
+                    "name": "Logistic Regression",
+                    "description": "Binary and multiclass",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "log1",
+                        "name": "Logistic regression",
+                        "description": "Sigmoid, cross-entropy loss",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "log2",
+                        "name": "Binary classification",
+                        "description": "Decision boundaries",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "log3",
+                        "name": "Multiclass methods",
+                        "description": "One-vs-Rest, multinomial",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 3,
+                    "name": "Feature Engineering",
+                    "description": "Preprocessing and selection",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "fe1",
+                        "name": "Feature scaling",
+                        "description": "Normalization, standardization",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "fe2",
+                        "name": "Feature selection",
+                        "description": "Univariate, recursive, model-based",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "fe3",
+                        "name": "Handling missing data",
+                        "description": "Imputation strategies",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  },
+                  {
+                    "week_num": 4,
+                    "name": "Evaluation Metrics",
+                    "description": "Measuring model performance",
+                    "status": "not_started",
+                    "tasks": [
+                      {
+                        "task_id": "em1",
+                        "name": "Regression metrics",
+                        "description": "MSE, R\u00b2, MAE",
+                        "status": "not_started",
+                        "priority": 1
+                      },
+                      {
+                        "task_id": "em2",
+                        "name": "Classification metrics",
+                        "description": "Accuracy, precision, recall, F1, AUC",
+                        "status": "not_started",
+                        "priority": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "quarter_num": 3,
+            "name": "Q3: Advanced Classical ML",
+            "description": "Tree-based methods, ensembles, clustering",
+            "focus_areas": [
+              "Decision Trees",
+              "Ensemble Methods",
+              "Clustering",
+              "Dimensionality Reduction"
+            ],
+            "status": "not_started",
+            "months": []
+          },
+          {
+            "quarter_num": 4,
+            "name": "Q4: Deep Learning Basics & Portfolio",
+            "description": "Neural networks and first major project",
+            "focus_areas": [
+              "Neural Network Basics",
+              "CNNs",
+              "RNNs",
+              "First Portfolio Project"
+            ],
+            "status": "not_started",
+            "months": []
+          }
+        ]
+      },
+      {
+        "year_num": 2,
+        "name": "Year 2: Advanced AI/ML & Specialization",
+        "description": "LLMs, GenAI, MLOps, System Design, Specialization",
+        "focus_areas": [
+          "Transformers & LLMs",
+          "MLOps & Deployment",
+          "System Design",
+          "Specialization Domains",
+          "Advanced Portfolio"
+        ],
+        "status": "not_started",
+        "quarters": [
+          {
+            "quarter_num": 1,
+            "name": "Q1: Transformers & LLMs",
+            "description": "Attention, transformers, and large language models",
+            "focus_areas": [
+              "Attention Mechanism",
+              "Transformer Architecture",
+              "Pre-trained LLMs",
+              "Fine-tuning"
+            ],
+            "status": "not_started",
+            "months": []
+          },
+          {
+            "quarter_num": 2,
+            "name": "Q2: GenAI & RAG",
+            "description": "Generative AI, prompt engineering, RAG systems",
+            "focus_areas": [
+              "Prompt Engineering",
+              "RAG Systems",
+              "Vector Databases",
+              "GenAI Applications"
+            ],
+            "status": "not_started",
+            "months": []
+          },
+          {
+            "quarter_num": 3,
+            "name": "Q3: MLOps & System Design",
+            "description": "Production ML, deployment, and system design",
+            "focus_areas": [
+              "ML Pipeline Design",
+              "Model Serving",
+              "Monitoring",
+              "Scalability"
+            ],
+            "status": "not_started",
+            "months": []
+          },
+          {
+            "quarter_num": 4,
+            "name": "Q4: Interview Prep & Portfolio Polish",
+            "description": "Final preparation for target roles",
+            "focus_areas": [
+              "System Design Interviews",
+              "ML Design Questions",
+              "Portfolio Review",
+              "Networking"
+            ],
+            "status": "not_started",
+            "months": []
+          }
+        ]
+      }
+    ],
+    "created_at": "2026-01-11T11:42:54.957900",
+    "last_updated": "2026-01-11T11:42:54.957907"
+  },
+  "progress": {
+    "daily_sessions": [
+      {
+        "date": "2026-01-11",
+        "duration_hours": 2.5,
+        "topics_covered": [
+          "Python",
+          "Setup"
+        ],
+        "resources_used": [],
+        "notes": "",
+        "mood": null,
+        "session_id": "2026-01-11T11:42:55.337576"
+      },
+      {
+        "date": "2026-01-11",
+        "duration_hours": 0.5,
+        "topics_covered": [
+          "Template application completion"
+        ],
+        "resources_used": [],
+        "notes": "",
+        "mood": null,
+        "session_id": "2026-01-11T13:19:48.045322"
+      }
+    ],
+    "current_streak": 1,
+    "longest_streak": 1,
+    "last_session_date": "2026-01-11",
+    "total_hours": 3.0,
+    "completed_milestones": 0,
+    "total_milestones": 0,
+    "updated_at": "2026-01-11T13:19:48.045326"
+  },
+  "resources": [],
+  "flashcard_decks": [],
+  "github_projects": [],
+  "weekly_tips": [],
+  "last_updated": "2026-01-11T13:19:48.046973"
+}

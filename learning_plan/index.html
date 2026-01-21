@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Growth Engine - 2026 ML Learning Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #6648eea 0%, #4864ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            background: linear-gradient(45deg, #6648eea, #4864ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            text-align: center;
+            color: #48f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .yearly-overview {
+            background: linear-gradient(135deg, #6648eea 0%, #4864ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0 5px 0;
+            text-align: center;
+        }
+        .yearly-overview h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .yearly-overview p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .months-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 15px 0 30px 0;
+        }
+        .month-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .month-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border-color: #fff;
+        }
+
+        .month-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .month-name {
+            color: #fff;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .month-icon {
+            font-size: 1.8em;
+            opacity: 0.9;
+        }
+
+        .month-focus {
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 8px 0;
+            opacity: 0.95;
+        }
+
+        .month-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: auto;
+        }
+
+        .topic-tag {
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .topic-tag:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .progress-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 10px 0 20px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .progress-section h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            text-align: center;
+            color: #000;
+        }
+
+        .progress-section h3 {
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            text-align: center;
+            color: #000;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.8s ease;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+
+        .progress-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            color: #000;
+        }
+
+        .progress-checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .progress-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            color: #000;
+        }
+
+        .progress-item:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        .progress-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 4px;
+            margin-right: 12px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .progress-item input[type="checkbox"]:checked + .checkmark {
+            background: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        .progress-item input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: -2px;
+            left: 3px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .progress-item.completed {
+            background: rgba(76, 175, 80, 0.2);
+            border-color: #4CAF50;
+        }
+        .week-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: #4950548;
+            transition: all 0.3s ease;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .week-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: #6648eea;
+        }
+        .week-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #6648eea, #4864ba2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .week-card:hover::before {
+            transform: scaleX(1);
+        }
+        .week-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #6648eea;
+            margin-bottom: 10px;
+        }
+        .week-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .week-description {
+            color: #6c48548d;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .week-topics {
+            font-size: 0.9em;
+            color: #4950548;
+        }
+        .week-topics ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .week-topics li {
+            margin: 5px 0;
+            position: relative;
+        }
+        .week-topics li::marker {
+            color: #6648eea;
+        }
+        .progress-section {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .progress-section h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a4845, #20c9948);
+            width: 14%; /* Week 1 of ~48 weeks planned */
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #6648eea;
+        }
+        .stat-label {
+            color: #6c48548d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #6648eea 0%, #4864ba2 100%);
+            color: white;
+            border-radius: 12px;
+        }
+        .cta-section h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .start-button {
+            display: inline-block;
+            background: white;
+            color: #6648eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        .start-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #6c48548d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AI Growth Engine</h1>
+        <p class="subtitle">2026 ML Learning Journey - Year Overview</p>
+
+        <div class="yearly-overview">
+            <h2>Your 2026 AI/ML Learning Path</h2>
+            <p>48 weeks of structured learning across 12 months. Click any month below to explore the detailed weekly curriculum.</p>
+        </div>
+
+        <div class="progress-section">
+            <h2>📊 Yearly Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="progressPercent">0%</div>
+                    <div class="stat-label">Complete</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="monthsCompleted">0</div>
+                    <div class="stat-label">Months Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalTopics">48</div>
+                    <div class="stat-label">Topics to Learn</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="topicsCovered">0</div>
+                    <div class="stat-label">Topics Covered</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="months-grid">
+        <div class="month-card" onclick="window.location.href='january.html'">
+            <div class="month-header">
+                <div class="month-name">January</div>
+                <div class="month-icon">🎯</div>
+            </div>
+            <div class="month-focus">Foundation & Data Science</div>
+            <div class="month-topics">
+                <span class="topic-tag">ML Basics</span>
+                <span class="topic-tag">Data Prep</span>
+                <span class="topic-tag">Linear Regression</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='february.html'">
+            <div class="month-header">
+                <div class="month-name">February</div>
+                <div class="month-icon">🧠</div>
+            </div>
+            <div class="month-focus">Advanced ML Algorithms</div>
+            <div class="month-topics">
+                <span class="topic-tag">Neural Networks</span>
+                <span class="topic-tag">Deep Learning</span>
+                <span class="topic-tag">CNNs</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='march.html'">
+            <div class="month-header">
+                <div class="month-name">March</div>
+                <div class="month-icon">🔬</div>
+            </div>
+            <div class="month-focus">Computer Vision & NLP</div>
+            <div class="month-topics">
+                <span class="topic-tag">Image Processing</span>
+                <span class="topic-tag">Text Analysis</span>
+                <span class="topic-tag">Transformers</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='april.html'">
+            <div class="month-header">
+                <div class="month-name">April</div>
+                <div class="month-icon">⚡</div>
+            </div>
+            <div class="month-focus">MLOps & Deployment</div>
+            <div class="month-topics">
+                <span class="topic-tag">Model Deployment</span>
+                <span class="topic-tag">CI/CD</span>
+                <span class="topic-tag">Monitoring</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='may.html'">
+            <div class="month-header">
+                <div class="month-name">May</div>
+                <div class="month-icon">🚀</div>
+            </div>
+            <div class="month-focus">Advanced Topics</div>
+            <div class="month-topics">
+                <span class="topic-tag">Reinforcement Learning</span>
+                <span class="topic-tag">AutoML</span>
+                <span class="topic-tag">Ethics</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='june.html'">
+            <div class="month-header">
+                <div class="month-name">June</div>
+                <div class="month-icon">🎓</div>
+            </div>
+            <div class="month-focus">Specialization & Projects</div>
+            <div class="month-topics">
+                <span class="topic-tag">Capstone Project</span>
+                <span class="topic-tag">Portfolio</span>
+                <span class="topic-tag">Career Prep</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='july.html'">
+            <div class="month-header">
+                <div class="month-name">July</div>
+                <div class="month-icon">🔄</div>
+            </div>
+            <div class="month-focus">Review & Advanced Practice</div>
+            <div class="month-topics">
+                <span class="topic-tag">Review</span>
+                <span class="topic-tag">Advanced Projects</span>
+                <span class="topic-tag">Research</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='august.html'">
+            <div class="month-header">
+                <div class="month-name">August</div>
+                <div class="month-icon">🌟</div>
+            </div>
+            <div class="month-focus">Emerging Technologies</div>
+            <div class="month-topics">
+                <span class="topic-tag">LLMs</span>
+                <span class="topic-tag">Edge AI</span>
+                <span class="topic-tag">Future Trends</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='september.html'">
+            <div class="month-header">
+                <div class="month-name">September</div>
+                <div class="month-icon">💼</div>
+            </div>
+            <div class="month-focus">Industry Applications</div>
+            <div class="month-topics">
+                <span class="topic-tag">Real-world Cases</span>
+                <span class="topic-tag">Industry Projects</span>
+                <span class="topic-tag">Business Impact</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='october.html'">
+            <div class="month-header">
+                <div class="month-name">October</div>
+                <div class="month-icon">🎯</div>
+            </div>
+            <div class="month-focus">Expert Level Skills</div>
+            <div class="month-topics">
+                <span class="topic-tag">Advanced ML</span>
+                <span class="topic-tag">Research Methods</span>
+                <span class="topic-tag">Innovation</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='november.html'">
+            <div class="month-header">
+                <div class="month-name">November</div>
+                <div class="month-icon">🚀</div>
+            </div>
+            <div class="month-focus">Portfolio & Career Launch</div>
+            <div class="month-topics">
+                <span class="topic-tag">Portfolio Building</span>
+                <span class="topic-tag">Job Applications</span>
+                <span class="topic-tag">Networking</span>
+            </div>
+        </div>
+        <div class="month-card" onclick="window.location.href='december.html'">
+            <div class="month-header">
+                <div class="month-name">December</div>
+                <div class="month-icon">🎉</div>
+            </div>
+            <div class="month-focus">Mastery & Next Steps</div>
+            <div class="month-topics">
+                <span class="topic-tag">Master Projects</span>
+                <span class="topic-tag">2027 Planning</span>
+                <span class="topic-tag">Continuous Learning</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🎯 <strong>AI Growth Engine</strong> - Transform your career with systematic AI/ML learning</p>
+        <p>📈 Progress through 48 weeks of comprehensive curriculum designed for real-world application</p>
+    </div>
+
+    <script>
+        function updateProgress() {
+            // Calculate progress based on months completed (simplified for now)
+            const monthsCompleted = 0; // This could be calculated based on actual progress
+            const totalMonths = 12;
+            const progressPercent = Math.round((monthsCompleted / totalMonths) * 100);
+
+            // Update progress bar
+            document.getElementById('progressFill').style.width = progressPercent + '%';
+            document.getElementById('progressPercent').textContent = progressPercent + '%';
+
+            // Update stats
+            document.getElementById('monthsCompleted').textContent = monthsCompleted;
+            document.getElementById('totalTopics').textContent = '48'; // Total topics to learn
+            document.getElementById('topicsCovered').textContent = '0'; // Topics covered so far
+        }
+
+        // Load saved progress on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            updateProgress(); // Update display
+        });
+    </script>
+</body>
+</html>

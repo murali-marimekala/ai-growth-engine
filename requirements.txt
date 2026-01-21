@@ -1,0 +1,15 @@
+"""
+Setup and requirements for the AI Growth Engine application.
+Install dependencies with: pip install -r requirements.txt
+"""
+
+# Core dependencies
+python-dotenv>=1.0.0  # For .env file support
+requests>=2.0.0  # For downloading images from OpenAI
+
+# Optional: For AI-powered coaching features
+openai>=1.0.0  # OpenAI API client (optional, for advanced coaching)
+
+# Development (optional)
+pytest>=7.0.0  # For running tests
+black>=22.0.0  # Code formatting
